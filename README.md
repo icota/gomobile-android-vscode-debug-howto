@@ -28,16 +28,16 @@ generic_x86_64:/ # /data/local/tmp/gdbserver :1337 --attach $(ps -A | grep your.
 
 - Install Native Debug by running `ext install webfreak.debug` in Visual Studio Code and add a configuration such as:
 ```
-        {
-            "type": "gdb",
-            "request": "attach",
-            "name": "Attach to gdbserver",
-            "executable": "./bin/executable",
-            "target": ":1337",
-            "remote": true,
-            "cwd": "${workspaceRoot}",
-            "valuesFormatting": "parseText"
-        },
+{
+    "type": "gdb",
+    "request": "attach",
+    "name": "Attach to gdbserver",
+    "executable": "./bin/executable",
+    "target": ":1337",
+    "remote": true,
+    "cwd": "${workspaceRoot}",
+    "valuesFormatting": "parseText"
+}
 ```
 
 - Enjoy!
